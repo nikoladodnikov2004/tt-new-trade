@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tt New Trade Ltd. - Ana Sayfa</title>
+    <meta name="description" content="TT New Trade – Avrupa ve Türkiye'deki üreticiler ile son müşteriler arasındaki köprünüz. Profesyonel lojistik çözümleri, ithalat, ihracat ve hammadde tedariki.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preload" href="../assets/images/New-Trade-Mobile.mp4" as="video" type="video/mp4" media="(max-width: 768px)">
+</head>
+
+<body>
+    <div class="currency-flow-top-bar">
+        <div class="ticker-stream" id="ticker-stream"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="../assets/images/логото2.webp" alt="TT New Trade Logo" width="180" height="50" loading="lazy">
+        </a>
+        <input type="checkbox" id="menu-toggle-input" style="display:none">
+        <label for="menu-toggle-input" class="burger-menu-btn"><span></span><span></span><span></span></label>
+        
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropdown-trigger">HİZMETLERİMİZ <span class="arrow">▼</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="menu-column">
+                                <a href="agency.html">ACENTELİK FAALİYETLERİ</a>
+                                <a href="materials.html">HAMMADDE TEDARİK HİZMETLERİ</a>
+                                <a href="importexport.html">İTHALAT & İHRACAT OPERASYONLARI</a>
+                            </div>
+                            <div class="menu-column">
+                                <a href="consultancy.html">DANIŞMANLIK</a>
+                                <a href="logistics.html">LOJİSTİK & DEPO ÇÖZÜMLERİ</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">Hakkımızda</a></li>
+                <li><a href="contacts.html">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div id="music-toggle" onclick="toggleMusic()" style="cursor:pointer;margin-right:20px;line-height:0">
+            <img id="music-icon" src="../assets/images/music-note (1).png" style="height:35px;filter:invert(1);opacity:.8" alt="Müzik Çalar" loading="lazy">
+        </div>
+
+        <div class="lang-switcher-container">
+            <ul class="menu-language">
+                <li>
+                    <img src="../assets/images/world.png" alt="Dil Seçimi" loading="lazy">
+                    <ul class="submenu">
+                        <li><a href="../bg/index.html">BG</a></li>
+                        <li><a href="../en/index.html">EN</a></li>
+                        <li><a href="index.html">TR</a></li>
+                    </ul>
+                    <img src="../assets/images/down-arrow.png" alt="Dil Oku" loading="lazy">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="../assets/videos/Video-HomePage-Mobile.mp4" type="video/mp4" media="(max-width: 768px)">
+            <source src="../assets/videos/Video-HomePage-Desktop.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1> <br class="mobile-break">TT NEW TRADE LTD. ŞTİ.</h1>
+            <p>Avrupa ve Türkiye'deki üreticiler ile son müşteriler arasındaki köprünüz.</p>
+            <a href="https://wa.me/359877883400?text=Merhaba! New Trade Ltd. şirketinin hizmetleriyle ilgileniyorum." class="btn-hero" target="_blank" rel="noopener">Bizimle İletişime Geçin</a>
+        </div>
+        <div class="quick-links-text"><span>Hızlı Navigasyon</span></div>
+        
+        <section class="quick-links">
+            <div class="link-item">
+                <a href="agency.html" class="grade-icon"><img src="../assets/images/home-agency.png" alt="Acentelik Faaliyeti" loading="lazy"></a>
+                <h3>ACENTELİK FAALİYETLERİ</h3>
+            </div>
+            <div class="link-item">
+                <a href="materials.html" class="schedule-icon"><img src="../assets/images/home-materials.png" alt="Hammadde" loading="lazy"></a>
+                <h3>HAMMADDE TEDARİK HİZMETLERİ</h3>
+            </div>
+            <div class="link-item">
+                <a href="importexport.html" class="priem-icon"><img src="../assets/images/home-importexport.png" alt="İthalat ve İhracat" loading="lazy"></a>
+                <h3>İTHALAT & İHRACAT OPERASYONLARI</h3>
+            </div>
+            <div class="link-item">
+                <a href="consultancy.html" class="notebook-icon"><img src="../assets/images/home-consultancy.png" alt="Danışmanlık" loading="lazy"></a>
+                <h3>DANIŞMANLIK</h3>
+            </div>
+            <div class="link-item">
+                <a href="logistics.html" class="news-icon"><img src="../assets/images/home-logistics.png" alt="Lojistik" loading="lazy"></a>
+                <h3>LOJİSTİK & DEPO ÇÖZÜMLERİ</h3>
+            </div>
+        </section>
+    </header>
+
+    <a href="https://wa.me/359877883400?text=Merhaba!%20New%20Trade%20Ltd.%20şirketinin%20hizmetleriyle%20ilgileniyorum." class="whatsapp-fixed" target="_blank" rel="noopener">
+        <img src="../assets/images/whatsapp (2).png" alt="WhatsApp İletişim" loading="lazy">
+    </a>
+
+    <audio id="champions-audio" loop>
+        <source src="../assets/audio/UEFA Champions League Anthem.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../assets/js/audio.js" defer></script>
+    <script src="../assets/js/liveflow.js" defer></script>
+    <script src="../assets/js/dropdown.js" defer></script>
+    
+</body>
+
+</html>
